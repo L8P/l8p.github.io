@@ -1,0 +1,140 @@
+/* საიტის ზედა ბარის კლასის ".site-header" პარამეტრიზაცია */
+.site-header {height: 50px;
+              background: #2b5868;
+              /* დაშორება პიქსელებში  ზედა, მარჯვენა, ქვედა, მარცხენა */
+              padding: 5px 20px 20px 10px;
+              /* ჩრდილის დამატება
+              ჩრდილის მდებარეობა X ღერძის გასწვრივ (+;- მიმართულება);
+              ჩრდილის მდებარეობა Y ღერძის გასწვრივ (+;- მიმართულება);
+              გაფანტვა; ფერი  */
+              box-shadow: 0 1px 5px #2b2a2a;}
+
+/* ლოგოს პარამეტრები */
+.main-logo {height: 40px;
+            padding: 5px 20px 0px 0px;
+            float: left;}
+
+/* ზედა ბარი */
+#main-menu{}
+#main-menu ul{padding: 11px;
+              margin: 0px;}
+#main-menu ul li{list-style: none;
+                display: inline;
+                padding: 15px;}
+#main-menu ul li a{text-decoration: none;
+                  color: #9ab0c3;
+                  font-weight: bold;
+                  text-transform: uppercase;
+                  font-size: 16px}
+
+/* მაუსის მიტანის დროს შეიცვლება ფერი */
+#main-menu ul li a:hover{color: white;
+                        cursor: pointer;}
+
+.login-register{float:right;
+                padding: 0px 15px 0px 15px;}
+
+ /* თაჩ-მენიუს სტილიზაცია (იგივეა რაც ძირითადი მენიუს) */
+#touch-menu {text-decoration: none;
+            color: #9ab0c3;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 16px;
+            padding: 12px;
+            font-family: "BPG Square Mtavruli", sans-serif;}
+
+#touch-menu:hover{color: white;
+                  cursor: pointer;}
+
+/* ეკრანის ნორმალურ მდგომარეობაში თაჩ-მენიუ არ ჩანს */
+#touch-menu {display: none;}
+
+/* @media - როდესაც დისპლეის სიგანე იქნება 800px-ზე ნაკლები, ძირითადი მენიუ დაიმალება და გამოჩნდება თაჩ-მენიუ */
+@media (max-width: 800px)
+       {  #main-menu{display: none;}
+         #touch-menu{display: block;}  }
+
+
+
+/* ნავბარ-ის ფონტი */
+nav{font-family: "BPG Square Mtavruli", sans-serif;}
+
+/* მთავარი ბანერი და ტექსტი */
+.main-banner{width: 100%;}
+.text-on-img{position: absolute;
+             top:20%;
+             color: orange;
+             font-size: 50px;
+             font-weight: bold;
+             text-transform: uppercase;
+             padding: 20px;}
+
+/* ======================================================================================================================== */
+
+/* ბანერის ქვემოთ ზოლი */
+.running-bar{height: 30px;
+            background: #000;
+            padding: 0px;}
+
+/* ჩარჩოები */
+.boxes{text-align: center;}
+.container-boxes li {display: inline-block;
+                    text-decoration: none;
+                    padding: 20px;}
+.container{width: 300px;
+          height: 300px;
+          margin: 10px;
+          background: #2b5868;
+          border: 3px solid #000;}
+
+/* რუკა */
+.map{width: 1000px;
+      height: 450px;
+      border: 2px solid #000;}
+.map1{text-align: center;}
+
+
+/* კონტაქტის ფორმა */
+.h1-main{font-weight: bold;
+        text-transform: uppercase;
+        color: #2b5868;
+        padding: 30px 30px 10px 30px;}
+
+.contact-form-main{ padding: 20px;
+                  text-align: center;}
+
+.contact-form{padding: 3px;}
+
+.contact-form2{width: 800px;
+                padding: 3px;}
+
+.contact-textarea{width: 800px;
+                  padding: 3px;}
+
+.contact-button{background-color: #2b5868;
+                color: white;
+                cursor: pointer;
+                text-transform: uppercase;}
+
+
+
+/* ====================================================================================================================== */
+
+
+/* ფუტერი */
+#footer{padding-bottom: 20px;
+        padding-top: 20px;
+        background-color: #2b5868;
+        color: #fff;
+        text-align: center;
+        }
+
+#footer a {text-decoration: none;}
+
+
+.footer1 li {display: inline-block;
+            padding: 30px 200px 30px 200px;}
+
+.footer1 a {color: white;
+            font-weight: bold;}
+.footer1 a:hover {color: #0a1f35;}
